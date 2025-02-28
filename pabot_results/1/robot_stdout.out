@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.RegistrationTest                                                       
+==============================================================================
+Registration                                                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\nitku\PycharmProjects\RobotPageObjectModelWeb\Testcases\RegistrationTest.robot:19
+    T:  Registration    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\nitku\PycharmProjects\RobotPageObjectModelWeb\Testcases\RegistrationTest.robot:21
+      Open registration Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\nitku\PycharmProjects\RobotPageObjectModelWeb\Resources\RegistrationKeywords.robot:10
+      Click Element    ${click_register}
+      |  ${click_register} = xpath://a[4] (str)
+______________________________________________________________________________
+| FAIL |
+No browser is open.
+------------------------------------------------------------------------------
+Suites.RegistrationTest                                               | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\nitku\PycharmProjects\RobotPageObjectModelWeb\pabot_results\1\output.xml

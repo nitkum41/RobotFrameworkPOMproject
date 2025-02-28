@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-28T19:51:29.258555" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="LoginTest" source="C:\Users\nitku\PycharmProjects\RobotPageObjectModelWeb\Testcases\LoginTest.robot">
+<test id="s1-s1-t1" name="Login Test" line="16">
+<kw name="Open my browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:51:29.484233" level="INFO">Opening browser 'chrome' to base url 'https://o2.openmrs.org/openmrs/login.htm'.</msg>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-28T19:51:29.483727" elapsed="5.179874"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-28T19:51:34.663828" elapsed="0.043880"/>
+</kw>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-02-28T19:51:29.483045" elapsed="5.224876"/>
+</kw>
+<kw name="Enter email" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:51:34.709848" level="INFO">Typing text 'Admin' into text field 'xpath://input[@id='username']'.</msg>
+<arg>${login_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:51:34.708852" elapsed="0.147640"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-02-28T19:51:34.708191" elapsed="0.148458"/>
+</kw>
+<kw name="Enter Password" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:51:34.858196" level="INFO">Typing text 'Admin123' into text field '//input[@id='password']'.</msg>
+<arg>${login_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:51:34.857673" elapsed="0.124468"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-02-28T19:51:34.856837" elapsed="0.125412"/>
+</kw>
+<kw name="Choose Location" owner="LoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:51:34.982909" level="INFO">Clicking element 'xpath://li[@id='Registration Desk']'.</msg>
+<arg>${login_location}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:51:34.982715" elapsed="0.068490"/>
+</kw>
+<status status="PASS" start="2025-02-28T19:51:34.982390" elapsed="0.069033"/>
+</kw>
+<kw name="Click Login Button" owner="LoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:51:35.053082" level="INFO">Clicking element 'xpath://input[@id='loginButton']'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:51:35.052181" elapsed="1.864522"/>
+</kw>
+<status status="PASS" start="2025-02-28T19:51:35.051686" elapsed="1.865323"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T19:51:39.918184" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T19:51:36.917169" elapsed="3.001219"/>
+</kw>
+<kw name="Verify Successful Login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:51:39.931867" level="INFO">Page title is 'Home'.</msg>
+<arg>Home</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-02-28T19:51:39.919384" elapsed="0.012655"/>
+</kw>
+<status status="PASS" start="2025-02-28T19:51:39.918781" elapsed="0.013458"/>
+</kw>
+<tag>login</tag>
+<status status="PASS" start="2025-02-28T19:51:29.482447" elapsed="10.450053"/>
+</test>
+<status status="PASS" start="2025-02-28T19:51:29.279696" elapsed="10.653838"/>
+</suite>
+<status status="PASS" start="2025-02-28T19:51:29.270596" elapsed="10.665721"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="0" skip="0">Suites</stat>
+<stat name="LoginTest" id="s1-s1" pass="1" fail="0" skip="0">Suites.LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

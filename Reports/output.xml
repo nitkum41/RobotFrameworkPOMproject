@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2.2 (Python 3.13.1 on win32)" generated="2025-02-28T19:58:20.392601" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="LoginTest" source="C:\Users\nitku\PycharmProjects\RobotPageObjectModelWeb\Testcases\LoginTest.robot">
+<test id="s1-s1-t1" name="Login Test" line="16">
+<kw name="Open my browser" owner="LoginKeywords">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:58:07.321539" level="INFO">Opening browser 'chrome' to base url 'https://o2.openmrs.org/openmrs/login.htm'.</msg>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-28T19:58:07.321331" elapsed="5.277404"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-02-28T19:58:12.599226" elapsed="0.030361"/>
+</kw>
+<arg>${siteurl}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2025-02-28T19:58:07.320748" elapsed="5.309000"/>
+</kw>
+<kw name="Enter email" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:58:12.630912" level="INFO">Typing text 'Admin' into text field 'xpath://input[@id='username']'.</msg>
+<arg>${login_username}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:58:12.630437" elapsed="0.097782"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2025-02-28T19:58:12.629968" elapsed="0.098521"/>
+</kw>
+<kw name="Enter Password" owner="LoginKeywords">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:58:12.729596" level="INFO">Typing text 'Admin123' into text field '//input[@id='password']'.</msg>
+<arg>${login_password}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:58:12.729307" elapsed="0.092632"/>
+</kw>
+<arg>${password}</arg>
+<status status="PASS" start="2025-02-28T19:58:12.728819" elapsed="0.093375"/>
+</kw>
+<kw name="Choose Location" owner="LoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:58:12.822900" level="INFO">Clicking element 'xpath://li[@id='Registration Desk']'.</msg>
+<arg>${login_location}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:58:12.822704" elapsed="0.080035"/>
+</kw>
+<status status="PASS" start="2025-02-28T19:58:12.822413" elapsed="0.080441"/>
+</kw>
+<kw name="Click Login Button" owner="LoginKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:58:12.904364" level="INFO">Clicking element 'xpath://input[@id='loginButton']'.</msg>
+<arg>${login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-28T19:58:12.903363" elapsed="1.509221"/>
+</kw>
+<status status="PASS" start="2025-02-28T19:58:12.903014" elapsed="1.509718"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-28T19:58:17.414325" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-28T19:58:14.412891" elapsed="3.001785"/>
+</kw>
+<kw name="Verify Successful Login" owner="LoginKeywords">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:58:17.432199" level="INFO">Page title is 'Home'.</msg>
+<arg>Home</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-02-28T19:58:17.416316" elapsed="0.016058"/>
+</kw>
+<status status="PASS" start="2025-02-28T19:58:17.415323" elapsed="0.017250"/>
+</kw>
+<tag>login</tag>
+<status status="PASS" start="2025-02-28T19:58:07.320253" elapsed="10.112585"/>
+</test>
+<status status="PASS" start="2025-02-28T19:58:07.166000" elapsed="10.112000"/>
+</suite>
+<suite id="s1-s2" name="RegistrationTest" source="C:\Users\nitku\PycharmProjects\RobotPageObjectModelWeb\Testcases\RegistrationTest.robot">
+<test id="s1-s2-t1" name="Registration" line="19">
+<kw name="Open registration Page" owner="RegistrationKeywords">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-28T19:58:20.154858" level="INFO">Clicking element 'xpath://a[4]'.</msg>
+<msg time="2025-02-28T19:58:20.154955" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2025-02-28T19:58:20.155027" level="FAIL">No browser is open.</msg>
+<arg>${click_register}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-02-28T19:58:20.154618" elapsed="0.001995">No browser is open.</status>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>${confirm_page_title}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-02-28T19:58:20.156792" elapsed="0.000045"/>
+</kw>
+<status status="FAIL" start="2025-02-28T19:58:20.154169" elapsed="0.002772">No browser is open.</status>
+</kw>
+<kw name="Enter Name" owner="RegistrationKeywords">
+<arg>${name}</arg>
+<arg>${fname}</arg>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157050" elapsed="0.000041"/>
+</kw>
+<kw name="Select Gender" owner="RegistrationKeywords">
+<arg>${gender}</arg>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157169" elapsed="0.000031"/>
+</kw>
+<kw name="Select Birth date" owner="RegistrationKeywords">
+<arg>${bir_day}</arg>
+<arg>${bir_year}</arg>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157272" elapsed="0.000028"/>
+</kw>
+<kw name="Enter Address" owner="RegistrationKeywords">
+<arg>${add_text}</arg>
+<arg>${add_city}</arg>
+<arg>${add_state}</arg>
+<arg>${add_country}</arg>
+<arg>${add_code}</arg>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157379" elapsed="0.000028"/>
+</kw>
+<kw name="Enter Phone Number" owner="RegistrationKeywords">
+<arg>${phone}</arg>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157473" elapsed="0.000026"/>
+</kw>
+<kw name="Select Relatives" owner="RegistrationKeywords">
+<arg>${relation_name}</arg>
+<arg>${relation_type}</arg>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157561" elapsed="0.000025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157644" elapsed="0.000026"/>
+</kw>
+<kw name="Verify Successful Registration" owner="RegistrationKeywords">
+<arg>${name}</arg>
+<arg>${fname}</arg>
+<status status="NOT RUN" start="2025-02-28T19:58:20.157741" elapsed="0.000029"/>
+</kw>
+<kw name="close browsers" owner="RegistrationKeywords">
+<status status="NOT RUN" start="2025-02-28T19:58:20.157836" elapsed="0.000026"/>
+</kw>
+<tag>registration</tag>
+<status status="FAIL" start="2025-02-28T19:58:20.153737" elapsed="0.004217">No browser is open.</status>
+</test>
+<status status="FAIL" start="2025-02-28T19:58:19.998170" elapsed="0.161781"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="FAIL" start="2025-02-28T19:58:07.158000" elapsed="13.002000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="0" fail="1" skip="0">registration</stat>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="1" fail="1" skip="0">Suites</stat>
+<stat name="LoginTest" id="s1-s1" pass="1" fail="0" skip="0">Suites.LoginTest</stat>
+<stat name="RegistrationTest" id="s1-s2" pass="0" fail="1" skip="0">Suites.RegistrationTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
